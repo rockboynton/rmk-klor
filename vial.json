@@ -1,8 +1,7 @@
 {
 	"name": "ElectronLab KLOR",
-	"vendorId": "0x3A3C",
-	"productId": "0x0001",
-	"lighting": "vialrgb",
+	"vendorId": "0x4c4b",
+	"productId": "0x4643",
 	"matrix": {"rows": 8, "cols": 6},
 	"layouts": {
 		"labels": [

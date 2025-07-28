@@ -1,4 +1,4 @@
 target
 
-.hex
-.uf2
+*.hex
+*.uf2
