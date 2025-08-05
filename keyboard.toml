@@ -7,19 +7,24 @@ manufacturer = "RMK"
 chip = "rp2040"
 
 [layout]
-rows = 4
-cols = 12
+rows = 8
+cols = 6
 layers = 1
 keymap = [
     [
-        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["a", "b", "c", "d", "e", "f"],
+        ["a", "b", "c", "d", "e", "f"],
+        ["a", "b", "c", "d", "e", "f"],
+        ["a", "b", "c", "d", "e", "f"],
+        ["a", "b", "c", "d", "e", "f"],
+        ["a", "b", "c", "d", "e", "f"],
+        ["a", "b", "c", "d", "e", "f"],
+        ["a", "b", "c", "d", "e", "f"],
     ],
 ]
 
 [storage]
+clear_storage = true
 
 [split]
 connection = "serial"
@@ -41,7 +46,7 @@ output_pins = ["PIN_27", "PIN_26", "PIN_22", "PIN_20", "PIN_23", "PIN_21"] # col
 rows = 4
 cols = 6
 row_offset = 0
-col_offset = 6
+col_offset = 0
 serial = [{ instance = "PIO0", tx_pin = "PIN_0", rx_pin = "PIN_4" }]
 [split.peripheral.matrix]
 matrix_type = "normal"

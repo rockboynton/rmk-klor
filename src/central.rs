@@ -5,4 +5,4 @@ use rmk::macros::rmk_central;
 use panic_probe as _;
 
 #[rmk_central]
-mod keyboard {}
+mod keyboard_central {}
