@@ -5,4 +5,4 @@ runner = "elf2uf2-rs -d"
 target = "thumbv6m-none-eabi"
 
 [env]
-KEYBOARD_TOML_PATH =  { value = "keyboard.toml", relative = true }
+KEYBOARD_TOML_PATH = { value = "keyboard.toml", relative = true }
