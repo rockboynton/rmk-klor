@@ -37,7 +37,7 @@ name = "base"
 keys = """
 Q                 W              E             R               T                             Y          U               I               O              P
 Escape            MT(A,LCtrl)    MT(S,LAlt)    MT(D,LGui)     MT(F,LShift)    G             H          MT(J,RShift)    MT(K,RGui)      MT(L,RAlt)     MT(Semicolon,RCtrl)    Quote
-CapsLock          Z              X             C              V               B       __         __    N              M               Comma           Dot                    Slash              RShift
+CapsWordToggle    Z              X             C              V               B       __         __    N              M               Comma           Dot                    Slash              RShift
                   __             Delete        Backspace      MO(1)                                    MO(2)          Space           Tab             __
 """
 
