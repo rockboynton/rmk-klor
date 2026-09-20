@@ -2112,6 +2112,7 @@ dependencies = [
  "embassy-executor",
  "embassy-rp",
  "embassy-time",
+ "embedded-graphics",
  "json",
  "panic-probe",
  "portable-atomic",
