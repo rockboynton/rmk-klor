@@ -110,7 +110,7 @@ operations = [{ operation = "text", text = "ll" }]
 [behavior.morse]
 # Mirror the Kyria's home-row-mod timing and quick-tap repeat behavior.
 enable_flow_tap = true
-prior_idle_time = "150ms"
+prior_idle_time = "175ms"
 unilateral_tap = true
 permissive_hold = true
 hold_timeout = "225ms"
