@@ -141,6 +141,18 @@ phase = "resolution"
 resolution = 2
 internal_pullup = true
 
+[split.central.display]
+driver = "ssd1306"
+size = "128x64"
+rotation = 180
+renderer = "LogoRenderer"
+
+[split.central.display.protocol.i2c]
+instance = "I2C1"
+sda = "PIN_2"
+scl = "PIN_3"
+address = 0x3C
+
 [[split.peripheral]]
 rows = 4
 cols = 6
@@ -158,3 +170,15 @@ pin_b = "PIN_28"
 phase = "resolution"
 resolution = 2
 internal_pullup = true
+
+[split.peripheral.display]
+driver = "ssd1306"
+size = "128x64"
+rotation = 180
+renderer = "LogoRenderer"
+
+[split.peripheral.display.protocol.i2c]
+instance = "I2C1"
+sda = "PIN_2"
+scl = "PIN_3"
+address = 0x3C

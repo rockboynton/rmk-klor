@@ -13,7 +13,7 @@ embassy-rp = { version = "0.10", features = ["rp2040", "time-driver", "critical-
 embassy-time = "0.5"
 panic-probe = "1"
 portable-atomic = { version = "1", features = ["critical-section"] }
-rmk = { version = "0.9", default-features = false, features = ["storage", "vial", "watchdog", "split", "rp2040"] }
+rmk = { version = "0.9", default-features = false, features = ["storage", "vial", "watchdog", "split", "rp2040", "ssd1306"] }
 static_cell = "2"
 
 [build-dependencies]
