@@ -4,6 +4,15 @@
 	"productId": "0x4643",
 	"matrix": {"rows": 8, "cols": 6},
 	"layouts": {
+		"labels": [
+			[
+				"Layout size",
+				"Polydactyl",
+				"Konrad",
+				"Yubitsume",
+				"Saegewerk"
+			]
+		],
 		"keymap": [
 			[
 				{
