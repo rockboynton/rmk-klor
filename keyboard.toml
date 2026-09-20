@@ -37,8 +37,8 @@ name = "base"
 keys = """
 Q                 W              E             R               T                             Y          U               I               O              P
 Escape            MT(A,LCtrl)    MT(S,LAlt)    MT(D,LGui)     MT(F,LShift)    G             H          MT(J,RShift)    MT(K,RGui)      MT(L,RAlt)     MT(Semicolon,RCtrl)    Quote
-CapsWordToggle    Z              X             C              V               B       __         __    N              M               Comma           Dot                    Slash              RShift
-                  __             Delete        Backspace      MO(1)                                    MO(2)          Space           Tab             __
+CapsWordToggle    Z              X             C              V               B       WM(Kc4,LGui | LShift)  WM(W,LGui)  N  M  Comma  Dot  Slash  RShift
+                  _              Delete        Backspace      MO(1)                                    MO(2)          Space           Tab             _
 """
 encoders = [
   ["WM(Right,LCtrl)", "WM(Left,LCtrl)"],
@@ -48,10 +48,10 @@ encoders = [
 [[keymap.layer]]
 name = "num"
 keys = """
-F9                F10            F11           F12            __                            __         Kc7             Kc8             Kc9            WM(Kc8,LShift)
-_                 F5             F6            F7             F8              __            __         Kc4             Kc5             Kc6            Equal                  __
-_                 F1             F2            F3             F4              __      __         __    Kc0             Kc1             Kc2             Kc3                    WM(Equal,LShift)   Minus
-                  _              _             _              _                                        Enter           _               _              _
+F9                F10            F11           F12            _                             _          Kc7             Kc8             Kc9            WM(Kc8,LShift)
+_                 F5             F6            F7             F8              _             _          Kc4             Kc5             Kc6            Equal                  WM(Backslash,LShift)
+_                 F1             F2            F3             F4              _       WM(Up,LCtrl)  _    Kc0             Kc1             Kc2             Kc3                    WM(Equal,LShift)   Minus
+                  _              _             _              _                                        MO(3)          Enter           _              _
 """
 encoders = [
   ["WM(Minus,LShift | LCtrl)", "WM(Minus,LCtrl)"],
@@ -61,24 +61,51 @@ encoders = [
 [[keymap.layer]]
 name = "sym"
 keys = """
-__                WM(Minus,LShift)  Minus      __             __                            __         __              __              __             __
-_                 WM(Kc1,LShift)    WM(Kc2,LShift)  WM(Kc3,LShift)  WM(Kc4,LShift)  WM(Kc5,LShift)  WM(Kc6,LShift)  WM(Kc7,LShift)  WM(Kc8,LShift)  WM(Equal,LShift)  Equal              Backslash
-_                 __                WM(LeftBracket,LShift)  LeftBracket  WM(Kc9,LShift)  __      __         __    __              WM(Kc0,LShift)  RightBracket  WM(RightBracket,LShift)  __   __
-                  _                 Delete      Escape         _                                        _               _               _              _
+WM(Grave,LShift)  WM(Minus,LShift)  Minus      Macro(0)       Macro(1)                      Macro(2)   Macro(3)       Macro(4)       Macro(5)       Macro(6)
+_                 WM(Kc1,LShift)    WM(Kc2,LShift)  WM(Kc3,LShift)  WM(Kc4,LShift)  WM(Kc5,LShift)  WM(Kc6,LShift)  WM(Kc7,LShift)  WM(Kc8,LShift)  WM(Kc9,LShift)  WM(Kc0,LShift)
+_                 WM(Comma,LShift)  WM(LeftBracket,LShift)  LeftBracket  WM(Kc9,LShift)  _       No         MediaPlayPause  _   WM(Kc0,LShift)  RightBracket  WM(RightBracket,LShift)  WM(Dot,LShift)  _
+                  No                Delete      Escape         MO(3)                                    MO(3)          _               _              _              _
 """
 encoders = [["KbVolumeUp", "KbVolumeDown"], ["MediaNextTrack", "MediaPrevTrack"]]
 
 [[keymap.layer]]
 name = "nav"
 keys = """
-__                __             __            __             __                            __         Home            PageDown        PageUp         End
-_                 _              _             _              _               __            __         Left            Down            Up             Right                  __
-_                 __             __            __             __              __      __         __    __              __              __             __                     __                 __
+_                 _              _             _              _                             _          End             PageUp          PageDown       Home
+_                 _              _             _              _               _             _          Right           Up              Down           Left                   _
+_                 _              _             _              _               _       _          _     WM(Right,LAlt)  WM(Up,LAlt)     WM(Down,LAlt)  WM(Left,LAlt)          _                 _
                   _              _             _              _                                        _               _               _              _
 """
 
 [behavior]
 tri_layer = { upper = 1, lower = 2, adjust = 3 }
+
+[[behavior.macro.macros]]
+operations = [{ operation = "text", text = "<-" }]
+
+[[behavior.macro.macros]]
+operations = [{ operation = "text", text = "&&" }]
+
+[[behavior.macro.macros]]
+operations = [{ operation = "text", text = "||" }]
+
+[[behavior.macro.macros]]
+operations = [{ operation = "text", text = "->" }]
+
+[[behavior.macro.macros]]
+operations = [{ operation = "text", text = "=>" }]
+
+[[behavior.macro.macros]]
+operations = [{ operation = "text", text = "::" }]
+
+[[behavior.macro.macros]]
+operations = [{ operation = "text", text = "==" }]
+
+[[behavior.macro.macros]]
+operations = [{ operation = "text", text = "!=" }]
+
+[[behavior.macro.macros]]
+operations = [{ operation = "text", text = "ll" }]
 
 [behavior.morse]
 # Mirror the Kyria's home-row-mod timing and quick-tap repeat behavior.
