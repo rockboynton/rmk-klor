@@ -51,7 +51,7 @@ keys = """
 F9                F10            F11           F12            _                             _          Kc7             Kc8             Kc9            WM(Kc8,LShift)
 _                 F5             F6            F7             F8              _             _          Kc4             Kc5             Kc6            Equal                  WM(Backslash,LShift)
 _                 F1             F2            F3             F4              _       WM(Up,LCtrl)  MO(3)          Kc0             Kc1             Kc2             Kc3             WM(Equal,LShift)   Minus
-                  _              _             _              _                                        MO(3)          Enter           _              _
+                  _              _             _              _                                        _              Enter           _              _
 """
 encoders = [
   ["WM(Minus,LShift | LCtrl)", "WM(Minus,LCtrl)"],
@@ -64,7 +64,7 @@ keys = """
 WM(Grave,LShift)  WM(Minus,LShift)  Minus      Macro(0)       Macro(1)                      Macro(2)   Macro(3)       Macro(4)       Macro(5)       Macro(6)
 _                 WM(Kc1,LShift)    WM(Kc2,LShift)  WM(Kc3,LShift)  WM(Kc4,LShift)  WM(Kc5,LShift)  WM(Kc6,LShift)  WM(Kc7,LShift)  WM(Kc8,LShift)  WM(Equal,LShift)  Equal  Backslash
 _                 WM(Comma,LShift)  WM(LeftBracket,LShift)  LeftBracket  WM(Kc9,LShift)  _       MediaPlayPause  KbMute  _  WM(Kc0,LShift)   RightBracket WM(RightBracket,LShift) WM(Dot,LShift)  _
-                  No                Delete         Escape        MO(3)           _                                        _               _               _
+                  No                Delete         Escape        _               _                                        _               _               _
 """
 encoders = [["KbVolumeUp", "KbVolumeDown"], ["MediaNextTrack", "MediaPrevTrack"]]
 

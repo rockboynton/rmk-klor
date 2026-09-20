@@ -130,7 +130,7 @@
         "KC_TRNS",
         "KC_TRNS",
         "KC_ENTER",
-        "MO(3)",
+        "KC_TRNS",
         "KC_TRNS"
       ]
     ],
@@ -164,7 +164,7 @@
         "KC_NO",
         "KC_DELETE",
         "KC_ESCAPE",
-        "MO(3)",
+        "KC_TRNS",
         "KC_MPLY"
       ],
       [
