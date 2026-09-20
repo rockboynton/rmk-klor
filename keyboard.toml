@@ -63,7 +63,7 @@ name = "sym"
 keys = """
 WM(Grave,LShift)  WM(Minus,LShift)  Minus      Macro(0)       Macro(1)                      Macro(2)   Macro(3)       Macro(4)       Macro(5)       Macro(6)
 _                 WM(Kc1,LShift)    WM(Kc2,LShift)  WM(Kc3,LShift)  WM(Kc4,LShift)  WM(Kc5,LShift)  WM(Kc6,LShift)  WM(Kc7,LShift)  WM(Kc8,LShift)  WM(Equal,LShift)  Equal  Backslash
-_                 WM(Comma,LShift)  WM(LeftBracket,LShift)  LeftBracket  WM(Kc9,LShift)  _       MediaPlayPause  KbMute  _  WM(Dot,LShift)  WM(RightBracket,LShift)  RightBracket  WM(Kc0,LShift)  _
+_                 WM(Comma,LShift)  WM(LeftBracket,LShift)  LeftBracket  WM(Kc9,LShift)  _       MediaPlayPause  KbMute  _  WM(Kc0,LShift)   RightBracket WM(RightBracket,LShift) WM(Dot,LShift)  _
                   No                Delete         Escape        MO(3)           _                                        _               _               _
 """
 encoders = [["KbVolumeUp", "KbVolumeDown"], ["MediaNextTrack", "MediaPrevTrack"]]
